@@ -29,7 +29,7 @@ jobs:
           node-version: 12.18.0
       - name: Deploy blog
         env:
-          Deploy : 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
+          Deploy : ${{secrets.Deploy_Blog}}
         run:
           git config --global user.name "zzg-12"
           git config --global user.email "2445422375@qq.com"
